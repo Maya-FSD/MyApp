@@ -1,23 +1,23 @@
-﻿import React, { useState } from 'react';
+﻿import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
-//import Login from './script/Login';
-import Dbfetch from 'Dbfetch';
-
+import { NavigationContainer } from "@react-navigation/native";
+import StackNavigator from "./StackNavigator";
 
 const App = () => {
   return (
-
-    <SafeAreaView style={styles.container}>
-    <Dbfetch/>
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={styles.container}>
+        <StackNavigator />
+      </SafeAreaView>
+    </NavigationContainer>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#f0f0f0',
-  },  
+  },
 });
+
 export default App;
