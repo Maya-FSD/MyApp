@@ -3,7 +3,7 @@ import React from 'react'
 import { ScrollView, View } from 'react-native'
 
 
-const Testpage3 = () => {
+const Testpage4 = () => {
   return (
     <ScrollView>
       <View>
@@ -15,4 +15,4 @@ const Testpage3 = () => {
   )
 }
 
-export default Testpage3;
+export default Testpage4;
